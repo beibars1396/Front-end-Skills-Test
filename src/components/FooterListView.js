@@ -47,8 +47,6 @@ const TotalText = styled.Text`
     color: #151515;
 `
 
-// font-family: Open Sans;
-
 export default () => (
     <Container>
         <CountView>

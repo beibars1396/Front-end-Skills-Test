@@ -3,7 +3,6 @@ import { ScrollView, Alert, ImageBackground } from 'react-native'
 
 import { Layout } from '@components/Layout'
 import Header from '@components/Header'
-import Vector from './assets/Vector.svg'
 import BigButton from '@components/BigButton'
 import SearchBox from '@components/SearchBox'
 import ButtonsContainer from '@components/ButtonsContainer'

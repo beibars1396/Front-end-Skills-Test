@@ -24,8 +24,6 @@ const Text = styled.Text`
     color: #FFFFFF;
 `
 
-// font-family: Open Sans;
-
 export default ({ onPress }) => (
     <Container onPress={onPress} activeOpacity={0.75} >
         <Image source={require('../../assets/club-member.png')} style={{width: 16.67, height: 15.83}} />
