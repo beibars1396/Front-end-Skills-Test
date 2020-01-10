@@ -19,6 +19,8 @@
 		2DCD954D1E0B4F2C00145EB5 /* FrontendTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FrontendTestTests.m */; };
 		3C0E963624AFA645D72137F1 /* libPods-FrontendTest-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3937D6A897F5C8227CCD7B57 /* libPods-FrontendTest-tvOSTests.a */; };
 		B83F316C70A375C1E4C22419 /* libPods-FrontendTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F00A2BEF60C2D428BB49F2 /* libPods-FrontendTestTests.a */; };
+		DDC773F723C7FA4900FA2D79 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC773F623C7FA4900FA2D79 /* libRNSVG.a */; };
+		DDC773F923C7FBE300FA2D79 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC773F823C7FBE300FA2D79 /* libRNSVG.a */; };
 		E964F430673637DFB812AD59 /* libPods-FrontendTest-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCF0FA026DD285EB73C978 /* libPods-FrontendTest-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "FrontendTest-tvOS";
+		};
+		DDC773FF23C7FEA200FA2D79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC773FA23C7FCAA00FA2D79 /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = RNSVG;
+		};
+		DDC7740123C7FEA200FA2D79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC773FA23C7FCAA00FA2D79 /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94DDAC5C1F3D024300EED511;
+			remoteInfo = "RNSVG-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,6 +80,9 @@
 		82F00A2BEF60C2D428BB49F2 /* libPods-FrontendTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrontendTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4B7A43C24024A35439D187 /* Pods-FrontendTest-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontendTest-tvOS.release.xcconfig"; path = "Target Support Files/Pods-FrontendTest-tvOS/Pods-FrontendTest-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		CDDCF0FA026DD285EB73C978 /* libPods-FrontendTest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrontendTest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC773F623C7FA4900FA2D79 /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNSVG.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC773F823C7FBE300FA2D79 /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNSVG.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC773FA23C7FCAA00FA2D79 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		FA401B6A7FA854ED9FA6D7CD /* Pods-FrontendTest-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontendTest-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FrontendTest-tvOSTests/Pods-FrontendTest-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC773F923C7FBE300FA2D79 /* libRNSVG.a in Frameworks */,
 				B83F316C70A375C1E4C22419 /* libPods-FrontendTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC773F723C7FA4900FA2D79 /* libRNSVG.a in Frameworks */,
 				18F6FFCC762C2F9063BA8A43 /* libPods-FrontendTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +160,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDC773F823C7FBE300FA2D79 /* libRNSVG.a */,
+				DDC773F623C7FA4900FA2D79 /* libRNSVG.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				088EFECF6A03EDE3E6D7AB66 /* libPods-FrontendTest.a */,
@@ -161,13 +184,13 @@
 				785694EAC5F84B52B386A5CD /* Pods-FrontendTestTests.debug.xcconfig */,
 				43E53C8B429A7345CDB48F73 /* Pods-FrontendTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				DDC773FA23C7FCAA00FA2D79 /* RNSVG.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -194,6 +217,15 @@
 				00E356EE1AD99517003FC87E /* FrontendTestTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* FrontendTest-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* FrontendTest-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDC773FB23C7FCAA00FA2D79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC7740023C7FEA200FA2D79 /* libRNSVG.a */,
+				DDC7740223C7FEA200FA2D79 /* libRNSVG-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,12 +340,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DDC773FB23C7FCAA00FA2D79 /* Products */;
+					ProjectRef = DDC773FA23C7FCAA00FA2D79 /* RNSVG.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* FrontendTest */,
@@ -323,6 +362,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DDC7740023C7FEA200FA2D79 /* libRNSVG.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSVG.a;
+			remoteRef = DDC773FF23C7FEA200FA2D79 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DDC7740223C7FEA200FA2D79 /* libRNSVG-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNSVG-tvOS.a";
+			remoteRef = DDC7740123C7FEA200FA2D79 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
