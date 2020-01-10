@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.TouchableOpacity`
-    margin: 16px;
+    margin-top: 16px;
     height: 50px;
     width: 343;
     flex-direction: row;
@@ -27,6 +27,6 @@ const Text = styled.Text`
 
 export default ({ onPress }) => (
     <Container onPress={onPress} activeOpacity={0.75} >
-        <Text>Club Member</Text>
+        <Text>Club member</Text>
     </Container>
 )
