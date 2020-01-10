@@ -48,13 +48,13 @@ export default ({ onPress }) => {
         {
             name: 'Kendall Jackson Vintner`s Reserve Chardonnay',
             totalPrice: '$349.38',
-            imageSource: require('../../assets/Wine.jpg')
+            imageSource: require('../../assets/wine.jpg')
         }, 
         {
             name: 'Kendall Jackson Vintner`s Reserve Chardonnay Luxury Wine',
             totalPrice: '$4,439.98',
             priceInfo: '2 x $2.035.67',
-            imageSource: require('../../assets/Wine1.jpg') 
+            imageSource: require('../../assets/wine1.jpg') 
         }, 
         {
             name: 'Kendall Chardonnay',
@@ -63,14 +63,14 @@ export default ({ onPress }) => {
         {
             name: 'Kendall Jackson Vintner`s Reserve Chardonnay',
             totalPrice: '$5,349.38',
-            imageSource: require('../../assets/Wine.jpg')
+            imageSource: require('../../assets/wine.jpg')
         }, 
         {
             name: 'Jackson Luxury Wine',
             totalPrice: '$439.98',
             priceInfo: '2 x $345.67',
             discountInfo: '10% (-$25.99)',
-            imageSource: require('../../assets/Wine1.jpg')
+            imageSource: require('../../assets/wine1.jpg')
         }, 
     ]
 

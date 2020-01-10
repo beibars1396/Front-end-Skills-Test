@@ -77,7 +77,7 @@ export default ({ onPress, item }) => (
     <Container onPress={onPress} activeOpacity={0.75} >
         <InfoContainer>
             {item.imageSource ? <Image source={item.imageSource} style={{width: 36, height: 51, borderRadius: 3}} /> : <DefaultImage>
-                <Image source={require('../../assets/WineDefault.png')} style={{width: 18, height: 18}} />
+                <Image source={require('../../assets/wine-default.png')} style={{width: 18, height: 18}} />
             </DefaultImage>}
             <InfoText>
                 {item.name}
