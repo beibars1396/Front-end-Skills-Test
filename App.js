@@ -8,6 +8,8 @@ import BigButton from '@components/BigButton'
 import SearchBox from '@components/SearchBox'
 import ButtonsContainer from '@components/ButtonsContainer'
 
+import ItemsListContainer from '@components/ItemsListContainer'
+
 export default () => {
   onPressButton = () => {
     Alert.alert(
@@ -22,6 +24,9 @@ export default () => {
         <ScrollView>
           <BigButton onPress={onPressButton} />
           <SearchBox onPress={onPressButton} />
+
+          <ItemsListContainer onPress={onPressButton} />
+
           <ButtonsContainer onPress={onPressButton} />
         </ScrollView>
       </Layout>
