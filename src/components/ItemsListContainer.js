@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlatList } from 'react-native'
+import { View } from 'react-native'
 
 import ItemListView from './ItemListView'
 import FooterListView from './FooterListView'
@@ -83,13 +83,20 @@ export default ({ onPress }) => {
                 </CountView>
                 <InfoText>#0134234</InfoText>
             </InfoView>
-            <FlatList
+            {items.map((item, i)=>(
+                <View key={i}>
+                    <ItemListView item={item} onPress={onPress} />
+                    <Separator />
+                </View>
+            ))}
+            {/* <FlatList
                     data = { items }
                     keyExtractor={(item, index) => index.toString()}
                     renderItem={({ item }) => <ItemListView item={item} onPress={onPress} />}
                     ItemSeparatorComponent={ Separator }
                     ListFooterComponent={ <FooterListView/> }
-                />
+                /> */}
+            <FooterListView/>
         </Container>
     )
 }

@@ -23,17 +23,15 @@ export default () => {
       style={{flex: 1, width: '100%', height: '100%'}}
       resizeMode='cover'
     > 
-      <Header />
-      <Layout>
-        <ScrollView>
+      <Header onPress={onPressButton} />
+      <ScrollView>
+        <Layout>
           <BigButton onPress={onPressButton} />
           <SearchBox onPress={onPressButton} />
-
           <ItemsListContainer onPress={onPressButton} />
-
           <ButtonsContainer onPress={onPressButton} />
-        </ScrollView>
-      </Layout>
+        </Layout>
+      </ScrollView>
     </ImageBackground> 
   )
 }

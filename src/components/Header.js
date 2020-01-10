@@ -1,14 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/native'
 import { Image } from 'react-native'
-
-const Container = styled.View`
-    height: 95px;
-    background-color: white;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-`
+import { Header } from 'react-native-elements'
 
 const UserNameText = styled.Text`
     font-style: normal;
@@ -26,9 +19,7 @@ const MenuButton = styled.TouchableOpacity`
     border-radius: 3px;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 4.27%;
-    top: 55%;
+    margin-left: 5px;
 `
 
 const UserNameContainer = styled.TouchableOpacity`
@@ -39,16 +30,23 @@ const UserNameContainer = styled.TouchableOpacity`
 `
 
 export default ({ onPress }) => (
-    <Container>
-        <MenuButton onPress={onPress} activeOpacity={0.75} >
-            <Image source={require('../../assets/menu-button.png')} style={{width: 32, height: 32}} />
-        </MenuButton>
-        <UserNameContainer onPress={onPress} activeOpacity={0.75} >
-            <Image source={require('../../assets/photo-profile.png')} style={{width: 30, height: 30, borderRadius: 25}} />
-            <UserNameText>
-                Johnissimus Van-Doe
-            </UserNameText>
-            <Image source={require('../../assets/arrow.png')} style={{width: 11.17, height: 6.58}} />
-        </UserNameContainer>
-    </Container>
+    <Header
+        containerStyle={{
+            backgroundColor: '#FEFEFE'
+        }}
+        leftComponent={
+            <MenuButton onPress={onPress} activeOpacity={0.75} >
+                <Image source={require('../../assets/menu-button.png')} style={{width: 32, height: 32}} />
+            </MenuButton>
+        }
+        centerComponent={
+            <UserNameContainer onPress={onPress} activeOpacity={0.75} >
+                <Image source={require('../../assets/photo-profile.png')} style={{width: 30, height: 30, borderRadius: 25}} />
+                <UserNameText>
+                    Johnissimus Van-Doe
+                </UserNameText>
+                <Image source={require('../../assets/arrow.png')} style={{width: 11.17, height: 6.58}} />
+            </UserNameContainer>
+        }
+    />
 )
