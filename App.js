@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, Alert } from 'react-native'
+import { ScrollView, Alert, ImageBackground } from 'react-native'
 
 import { Layout } from '@components/Layout'
 import Header from '@components/Header'
@@ -18,8 +18,12 @@ export default () => {
   }
 
   return(
-    <>
-      <Header onPress={onPressButton} />
+    <ImageBackground
+      source={require('./assets/background.jpg')}
+      style={{flex: 1, width: '100%', height: '100%'}}
+      resizeMode='cover'
+    > 
+      <Header />
       <Layout>
         <ScrollView>
           <BigButton onPress={onPressButton} />
@@ -30,6 +34,6 @@ export default () => {
           <ButtonsContainer onPress={onPressButton} />
         </ScrollView>
       </Layout>
-    </> 
+    </ImageBackground> 
   )
 }

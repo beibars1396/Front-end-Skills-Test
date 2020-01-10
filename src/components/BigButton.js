@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Image } from 'react-native'
 
 const Container = styled.TouchableOpacity`
     margin-top: 16px;
@@ -14,7 +15,7 @@ const Container = styled.TouchableOpacity`
 `
 
 const Text = styled.Text`
-    
+    margin-left: 9.33px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -27,6 +28,7 @@ const Text = styled.Text`
 
 export default ({ onPress }) => (
     <Container onPress={onPress} activeOpacity={0.75} >
+        <Image source={require('../../assets/club-member.png')} style={{width: 16.67, height: 15.83}} />
         <Text>Club member</Text>
     </Container>
 )
